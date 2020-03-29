@@ -1,0 +1,25 @@
+%body
+  %header.header
+    %p.site-title-sub ----- Web application portfolio -----
+    %h1.site-title My WORKS
+    %p.site-description Check out some of my works.
+    .buttons
+      %a.button{:href => "#about"} Learn MORE
+      %a.button.button-orange{:href => "#contact"} SEND MESSAGE
+  %section#about.about
+    %h2.heading PROFILE
+    %p.about-text
+      子どもの頃からモノづくりが好きで、いまはウェブアプリをつくることにハマっています。
+      Railsは難しくて最初は使えるようになるのかな？と不安に感じましたが、いまは本当に便利なフレームワークだなと思っています。
+      %br/
+      これから、共通の趣味を持った仲間がコミュニケーションを取れるようなオリジナルアプリをつくっていきます。来月リリース予定なので、興味のある方はぜひお試しください！
+  %section.works
+    %h2.heading MY WORKS
+    .works-wrapper
+      .work-box
+        -# %img.work-image{:alt => "制作事例", :src => "images/スクリーンショット 2020-03-26 13.14.11.png"}/
+        .work-description
+          Pictweet
+          %br/
+          %a.button.button-ghost{:href => "#"} READ MORE
+  %section#contact.contact
