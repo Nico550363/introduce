@@ -118,3 +118,21 @@ body {
   height: 100vh;
   background-color: rgba(25, 25, 120, 0.9);
 }
+
+
+
+.contact-form {
+  width: 50%;
+  margin: 50px auto 0;
+}
+
+.contact-form input[type=text], .contact-form textarea {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 15px;
+  outline: none;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  border-radius: 0;
+  color: #333;
+}
