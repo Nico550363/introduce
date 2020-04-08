@@ -1,18 +1,12 @@
-// Place all the styles related to the products controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
-
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 body {
-  color: #fff;
-  text-align: center;
-  font-size: 0.8rem;
-  background: image-url('bg.jpg');
-//   background: url('images/bg.jpg') fixed;
-//   background-size: cover;
+    color: #fff;
+    text-align: center;
+    font-size: 0.8rem;
+    background: image-url('bg.jpg');
 }
 
 .header {
@@ -22,70 +16,74 @@ body {
 }
 
 .site-title-sub {
-  margin: 0 0 30px;
-  letter-spacing: 1px;
-  font-size: 1.2rem;
+    margin: 0 0 30px;
+    letter-spacing: 1px;
+    font-size: 1.2rem;
 }
 
 .site-title {
-  margin: 50px;
-  font-size: 4.5rem;
+    margin: 50px;
+    font-size: 4.5rem;
 }
 
 .site-description {
-  margin-bottom: 50px;
-  color: #888;
+    margin-bottom: 50px;
+    color: #888;
 }
 
 .button {
-  display: inline-block;
-  width: 200px;
-  padding: 20px;
-  margin: 10px;
-  border-radius: 4px;
-  background-color: #afa58d;
-  color: #fff;
-  text-decoration: none;
-  letter-spacing: 1px;
-  font-size: 0.7rem;
+    display: inline-block;
+    width: 200px;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 4px;
+    background-color: #afa58d;
+    color: #fff;
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-size: 0.7rem;
 }
 
 .button:hover {
-  opacity: 0.9;
+    opacity: 0.9;
 }
 
 .button-orange {
-  background-color: #f1b400;
+    background-color: #f1b400;
 }
 
 .about {
   height: 100vh;
+  background-color: #ffffff;
   padding: 80px 30px;
-  background-color: #fff;
-  color: #333;
+  color: #333;  
 }
+
 .about-text {
-  width: 600px;
-  margin: 30px auto;
-  line-height: 2.5;
-  text-align: left;
+    width: 600px;
+    margin: 30px auto;
+    line-height: 2.5;
+    text-align: left;
 }
 
 .heading {
-  display: inline-block;
-  margin: 30px 0 15px;
-  padding-bottom: 15px;
-  letter-spacing: 2px;
-  font-size: 4rem;
-  border-bottom: double 4px #999;
+    display: inline-block;
+    margin: 30px 0 15px;
+    padding-bottom: 15px;
+    letter-spacing: 2px;
+    font-size: 4rem;
+    border-bottom: double 4px #999;
 }
+
 .works {
   height: 100vh;
   background-color: #383634;
   padding: 80px 0 10px;
 }
+
 .works-wrapper {
-  width: 970px;
+  display: flex;
+  width: 860px;
   margin: 60px auto 0;
 }
 
@@ -117,8 +115,8 @@ body {
 .contact {
   height: 100vh;
   background-color: rgba(25, 25, 120, 0.9);
+  padding: 80px 0 150px;
 }
-
 
 
 .contact-form {
@@ -141,10 +139,6 @@ body {
   height: 150px;
 }
 
-.contact-form textarea {
-  height: 150px;
-}
-
 .contact-form input[type=submit] {
   display: block;
   width: 200px;
@@ -155,4 +149,8 @@ body {
   background-color: transparent;
   color: #fff;
   cursor: pointer;
+}
+
+.contact-form input[type=submit]:hover {
+  background-color: rgba(255, 255, 255, 0.05);
 }
