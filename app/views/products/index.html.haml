@@ -1,7 +1,6 @@
 %body
   %header.header
     .page-header
-      %h1 @
       %nav.nav-header
         %ul.ul-header
           %li.header-list{:href => "#"} skill
@@ -10,7 +9,7 @@
           %li.header-list{:href => "#"} contact
       -# %p.site-title-sub ----- Web application portfolio -----
     .site-title
-      %h2 Nico's portfolio
+      %h4 Nico's portfolio
       -# %p.site-description Check out some of my works.
       -# .buttons
       -#   %a.button{:href => "#about"} Learn MORE
@@ -20,7 +19,6 @@
     .skill-box
       =link_to "#" do
         = icon('fab', 'html5', class: 'icon')
-      -# = icon 'fab', 'fa-css3', '500px'
       =link_to "#" do
         = icon('fab', 'css3', class: 'icon')
       =link_to "#" do

@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
   root to: 'products#index'
-  get "product" => "products#index"
+  get "products" => "products#index"
+  get "products/new" => "products#new"
 end
