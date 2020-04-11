@@ -1,18 +1,39 @@
 %body
   %header.header
-    %p.site-title-sub ----- Web application portfolio -----
-    %h1.site-title My WORKS
-    %p.site-description Check out some of my works.
-    .buttons
-      %a.button{:href => "#about"} Learn MORE
-      %a.button.button-orange{:href => "#contact"} SEND MESSAGE
+    .page-header
+      %h1 @
+      %nav.nav-header
+        %ul.ul-header
+          %li.header-list{:href => "#"} skill
+          %li.header-list{:href => "#"} works
+          %li.header-list{:href => "#"} about
+          %li.header-list{:href => "#"} contact
+      -# %p.site-title-sub ----- Web application portfolio -----
+    .site-title
+      %h2 Nico's portfolio
+      -# %p.site-description Check out some of my works.
+      -# .buttons
+      -#   %a.button{:href => "#about"} Learn MORE
+      -#   %a.button.button-orange{:href => "#contact"} SEND MESSAGE
   %section#about.about
-    %h2.heading PROFILE
-    %p.about-text
-      子どもの頃からモノづくりが好きで、いまはウェブアプリをつくることにハマっています。
-      Railsは難しくて最初は使えるようになるのかな？と不安に感じましたが、いまは本当に便利なフレームワークだなと思っています。
-      %br/
-      これから、共通の趣味を持った仲間がコミュニケーションを取れるようなオリジナルアプリをつくっていきます。来月リリース予定なので、興味のある方はぜひお試しください！
+    %h2.heading SKILL
+    .skill-box
+      =link_to "#" do
+        = icon('fab', 'html5', class: 'icon')
+      -# = icon 'fab', 'fa-css3', '500px'
+      =link_to "#" do
+        = icon('fab', 'css3', class: 'icon')
+      =link_to "#" do
+        = icon('fab', 'sass', class: 'icon')
+      =link_to "#" do
+        = icon('fab', 'js-square', class: 'icon')
+      =link_to "#" do
+        = icon('fal', 'gem', class: 'icon')
+    -# %p.about-text
+    -#   子どもの頃からモノづくりが好きで、いまはウェブアプリをつくることにハマっています。
+    -#   Railsは難しくて最初は使えるようになるのかな？と不安に感じましたが、いまは本当に便利なフレームワークだなと思っています。
+    -#   %br/
+    -#   これから、共通の趣味を持った仲間がコミュニケーションを取れるようなオリジナルアプリをつくっていきます。来月リリース予定なので、興味のある方はぜひお試しください！
   %section.works
     %h2.heading MY WORKS
     .works-wrapper
@@ -24,6 +45,9 @@
           %a.button.button-ghost{:href => "#"} READ MORE
   %section#contact.contact
     %form.contact-form
+      %input{:name => "company", :placeholder => "COMPANY", :type => "text"}/
       %input{:name => "name", :placeholder => "NAME", :type => "text"}/
+      %input{:name => "mail-address", :placeholder => "MAIL-ADDRESS", :type => "text"}/
+      %input{:name => "phone-number", :placeholder => "PHONE-NUMBER", :type => "text"}/
       %textarea{:name => "message", :placeholder => "MESSAGE"}
       %input{:type => "submit", :value => "SEND"}/

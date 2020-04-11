@@ -9,10 +9,26 @@ body {
     background: image-url('bg.jpg');
 }
 
-.header {
+header {
   padding: 170px 30px 80px;
   height: 100vh;
   background-color: rgba(25, 25, 120, 0.9);
+}
+
+.page-header{
+  display: flex;
+  justify-content: space-between;
+}
+.nav-header{
+  display: flex;
+}
+.ul-header{
+  display: flex;
+  text-decoration: none;
+  list-style: none;
+}
+.header-list{
+  margin-right: 10px;
 }
 
 .site-title-sub {
