@@ -1,0 +1,44 @@
+.about {
+  height: 100vh;
+  background-color: #ffffff;
+  padding: 80px 30px;
+  color: #333;  
+  text-align: left;
+  &-site{
+    margin: 50px;
+  }
+}
+
+.heading {
+    display: inline-block;
+    margin: 30px 0 15px;
+    padding-bottom: 15px;
+    letter-spacing: 2px;
+    font-size: 4rem;
+    border-bottom: double 4px #999;
+}
+
+.topics{
+  width: 70%;
+  float: right;
+}
+.topics dl {
+  padding: 15px 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.topics dt {
+  padding-bottom: 5px;
+}
+
+@media screen and (min-width: 768px) {
+  .topics dt {
+    clear: left;
+    float: left;
+    width: 20%;
+  }
+  .topics dd {
+    margin-left: 11%;
+  }
+}
+

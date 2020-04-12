@@ -1,7 +1,7 @@
 header {
   padding: 50px 30px 80px;
   height: 100vh;
-  background-color: rgba(25, 25, 120, 0.9);
+  // background-color: rgba(25, 25, 120, 0.9);
 }
 
 .page-header{
@@ -16,11 +16,22 @@ header {
   text-decoration: none;
   list-style: none;
 }
-.header-list{
-  margin-right: 10px;
-  &_small{
-    text-decoration: none;
-    color: black;
+.header{
+  &-logo{
+    text-align: left;
+  }
+  &-icon{
+    font-size: 7.5em;
+  }
+  &-list{
+    margin-right: 10px;
+    &_small{
+      text-decoration: none;
+      color: black;
+    }
+    &_small:hover {
+      color: skyblue;
+    }
   }
 }
 
@@ -40,23 +51,23 @@ header {
     color: #888;
 }
 
-.button {
-    display: inline-block;
-    width: 200px;
-    padding: 20px;
-    margin: 10px;
-    border-radius: 4px;
-    background-color: #afa58d;
-    color: #fff;
-    text-decoration: none;
-    letter-spacing: 1px;
-    font-size: 0.7rem;
-}
+// .button {
+//     display: inline-block;
+//     width: 200px;
+//     padding: 20px;
+//     margin: 10px;
+//     border-radius: 4px;
+//     background-color: #afa58d;
+//     color: #fff;
+//     text-decoration: none;
+//     letter-spacing: 1px;
+//     font-size: 0.7rem;
+// }
 
-.button:hover {
-    opacity: 0.9;
-}
+// .button:hover {
+//     opacity: 0.9;
+// }
 
-.button-orange {
-    background-color: #f1b400;
-}
+// .button-orange {
+//     background-color: #f1b400;
+// }

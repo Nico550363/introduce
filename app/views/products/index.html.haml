@@ -1,21 +1,21 @@
 %body
   %header.header
-    .toppage-footer-top
+    .header-logo
       = image_tag "Nico's1.png", class: "toppage-footer-top__box", width: "20%", height: "20%"
     .page-header
       %nav.nav-header
         %ul.ul-header
           %li.header-list
-            =link_to "#" do
+            =link_to "#skill", class: "header-list_small" do
               skill
           %li.header-list
-            =link_to "#" do
+            =link_to "#", class: "header-list_small" do
               works
           %li.header-list
             =link_to products_about_path, class: "header-list_small" do
               about
           %li.header-list
-            =link_to "#contact" do
+            =link_to "#contact", class: "header-list_small" do
               contact
       -# %p.site-title-sub ----- Web application portfolio -----
     .site-title
@@ -24,19 +24,24 @@
       -# .buttons
       -#   %a.button{:href => "#about"} Learn MORE
       -#   %a.button.button-orange{:href => "#contact"} SEND MESSAGE
-  %section#about.about
+  %section#skill.skill
     %h2.heading SKILL
     .skill-box
-      =link_to "#" do
-        = icon('fab', 'html5', class: 'icon')
-      =link_to "#" do
-        = icon('fab', 'css3', class: 'icon')
-      =link_to "#" do
-        = icon('fab', 'sass', class: 'icon')
-      =link_to "#" do
-        = icon('fab', 'js-square', class: 'icon')
-      =link_to "#" do
-        = icon('fal', 'gem', class: 'icon')
+      .skill-box-small
+        = icon('fab', 'html5', class: 'header-icon')
+        .skill-box-small-text HTML
+      .skill-box-small
+        = icon('fab', 'css3', class: 'header-icon')
+        .skill-box-small-text CSS
+      .skill-box-small
+        = icon('fab', 'sass', class: 'header-icon')
+        .skill-box-small-text SASS
+      .skill-box-small
+        = icon('fab', 'js-square', class: 'header-icon')
+        .skill-box-small-text JavaScript
+      .skill-box-small
+        = icon('fas', 'gem', class: 'header-icon')
+        .skill-box-small-text Ruby/Ruby on Rails
     -# %p.about-text
     -#   子どもの頃からモノづくりが好きで、いまはウェブアプリをつくることにハマっています。
     -#   Railsは難しくて最初は使えるようになるのかな？と不安に感じましたが、いまは本当に便利なフレームワークだなと思っています。

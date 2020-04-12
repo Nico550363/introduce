@@ -1,1 +1,34 @@
-%p nnnnnnn
+%body
+  %section#about.about
+    .header-logo
+      = image_tag "Nico's1.png", class: "toppage-footer-top__box", width: "20%", height: "20%"
+    .page-header
+      %nav.nav-header
+        %ul.ul-header
+          %li.header-list
+            =link_to "#", class: "header-list_small" do
+              skill
+          %li.header-list
+            =link_to "#", class: "header-list_small" do
+              works
+          %li.header-list
+            =link_to products_about_path, class: "header-list_small" do
+              about
+          %li.header-list
+            =link_to "#contact", class: "header-list_small" do
+              contact
+    .about-site
+      %h2.heading ABOUT
+      .topics
+        %dl
+          %dt 名称
+          %dd NICO
+        %dl
+          %dt 所在地
+          %dd 大阪市内
+        %dl
+          %dt お問い合わせ
+          %dd nico.550363@gmail.com
+        %dl
+          %dt 事業内容
+          %dd コーティング
