@@ -3,7 +3,7 @@ class ProductsController < ApplicationController
   def index
   end
 
-  def new
+  def about
   end
 
 end

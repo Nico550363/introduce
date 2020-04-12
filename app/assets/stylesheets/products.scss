@@ -9,64 +9,6 @@ body {
     background: image-url('bg.jpg');
 }
 
-header {
-  padding: 170px 30px 80px;
-  height: 100vh;
-  background-color: rgba(25, 25, 120, 0.9);
-}
-
-.page-header{
-  float: right;
-  justify-content: space-between;
-}
-.nav-header{
-  display: flex;
-}
-.ul-header{
-  display: flex;
-  text-decoration: none;
-  list-style: none;
-}
-.header-list{
-  margin-right: 10px;
-}
-
-.site-title-sub {
-    margin: 0 0 30px;
-    letter-spacing: 1px;
-    font-size: 1.2rem;
-}
-
-.site-title {
-    margin: 50px;
-    font-size: 4.5rem;
-}
-
-.site-description {
-    margin-bottom: 50px;
-    color: #888;
-}
-
-.button {
-    display: inline-block;
-    width: 200px;
-    padding: 20px;
-    margin: 10px;
-    border-radius: 4px;
-    background-color: #afa58d;
-    color: #fff;
-    text-decoration: none;
-    letter-spacing: 1px;
-    font-size: 0.7rem;
-}
-
-.button:hover {
-    opacity: 0.9;
-}
-
-.button-orange {
-    background-color: #f1b400;
-}
 
 .about {
   height: 100vh;

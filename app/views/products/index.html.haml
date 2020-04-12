@@ -1,12 +1,22 @@
 %body
   %header.header
+    .toppage-footer-top
+      = image_tag "Nico's1.png", class: "toppage-footer-top__box", width: "20%", height: "20%"
     .page-header
       %nav.nav-header
         %ul.ul-header
-          %li.header-list{:href => "#"} skill
-          %li.header-list{:href => "#"} works
-          %li.header-list{:href => "#"} about
-          %li.header-list{:href => "#"} contact
+          %li.header-list
+            =link_to "#" do
+              skill
+          %li.header-list
+            =link_to "#" do
+              works
+          %li.header-list
+            =link_to products_about_path, class: "header-list_small" do
+              about
+          %li.header-list
+            =link_to "#contact" do
+              contact
       -# %p.site-title-sub ----- Web application portfolio -----
     .site-title
       %h4 Nico's portfolio
