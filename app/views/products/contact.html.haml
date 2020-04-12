@@ -1,0 +1,13 @@
+%body
+  .header
+    = render "products/header"
+  %section#contact.contact
+    .about-site
+      %h2.heading CONTACT
+    %form.contact-form
+      %input{:name => "company", :placeholder => "COMPANY", :type => "text"}/
+      %input{:name => "name", :placeholder => "NAME", :type => "text"}/
+      %input{:name => "mail-address", :placeholder => "MAIL-ADDRESS", :type => "text"}/
+      %input{:name => "phone-number", :placeholder => "PHONE-NUMBER", :type => "text"}/
+      %textarea{:name => "message", :placeholder => "MESSAGE"}
+      %input{:type => "submit", :value => "SEND"}/

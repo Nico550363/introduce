@@ -1,66 +1,9 @@
 %body
-  %header.header
-    .header-logo
-      = image_tag "Nico's1.png", class: "toppage-footer-top__box", width: "20%", height: "20%"
-    .page-header
-      %nav.nav-header
-        %ul.ul-header
-          %li.header-list
-            =link_to "#skill", class: "header-list_small" do
-              skill
-          %li.header-list
-            =link_to "#", class: "header-list_small" do
-              works
-          %li.header-list
-            =link_to products_about_path, class: "header-list_small" do
-              about
-          %li.header-list
-            =link_to "#contact", class: "header-list_small" do
-              contact
-      -# %p.site-title-sub ----- Web application portfolio -----
+  .header
+    = render "products/header"
     .site-title
       %h4 Nico's portfolio
-      -# %p.site-description Check out some of my works.
-      -# .buttons
-      -#   %a.button{:href => "#about"} Learn MORE
-      -#   %a.button.button-orange{:href => "#contact"} SEND MESSAGE
-  %section#skill.skill
-    %h2.heading SKILL
-    .skill-box
-      .skill-box-small
-        = icon('fab', 'html5', class: 'header-icon')
-        .skill-box-small-text HTML
-      .skill-box-small
-        = icon('fab', 'css3', class: 'header-icon')
-        .skill-box-small-text CSS
-      .skill-box-small
-        = icon('fab', 'sass', class: 'header-icon')
-        .skill-box-small-text SASS
-      .skill-box-small
-        = icon('fab', 'js-square', class: 'header-icon')
-        .skill-box-small-text JavaScript
-      .skill-box-small
-        = icon('fas', 'gem', class: 'header-icon')
-        .skill-box-small-text Ruby/Ruby on Rails
-    -# %p.about-text
-    -#   子どもの頃からモノづくりが好きで、いまはウェブアプリをつくることにハマっています。
-    -#   Railsは難しくて最初は使えるようになるのかな？と不安に感じましたが、いまは本当に便利なフレームワークだなと思っています。
-    -#   %br/
-    -#   これから、共通の趣味を持った仲間がコミュニケーションを取れるようなオリジナルアプリをつくっていきます。来月リリース予定なので、興味のある方はぜひお試しください！
-  %section.works
-    %h2.heading MY WORKS
-    .works-wrapper
-      .work-box
-        -# %img.work-image{:alt => "制作事例", :src => "images/lifespace.png"}/
-        .work-description
-          Pictweet
-          %br/
-          %a.button.button-ghost{:href => "#"} READ MORE
-  %section#contact.contact
-    %form.contact-form
-      %input{:name => "company", :placeholder => "COMPANY", :type => "text"}/
-      %input{:name => "name", :placeholder => "NAME", :type => "text"}/
-      %input{:name => "mail-address", :placeholder => "MAIL-ADDRESS", :type => "text"}/
-      %input{:name => "phone-number", :placeholder => "PHONE-NUMBER", :type => "text"}/
-      %textarea{:name => "message", :placeholder => "MESSAGE"}
-      %input{:type => "submit", :value => "SEND"}/
+      %p.site-title-sub
+        新しいサービスを生み出すことで人と人とを繋ぐきっかけを作りたい
+        %br/
+        その手伝いをさせていただきます

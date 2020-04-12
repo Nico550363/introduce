@@ -1,8 +1,4 @@
-header {
-  padding: 50px 30px 80px;
-  height: 100vh;
-  // background-color: rgba(25, 25, 120, 0.9);
-}
+
 
 .page-header{
   float: right;
@@ -17,6 +13,8 @@ header {
   list-style: none;
 }
 .header{
+  padding: 50px 30px 0px;
+  // height: 100vh;
   &-logo{
     text-align: left;
   }

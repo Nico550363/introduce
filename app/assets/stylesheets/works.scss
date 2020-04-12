@@ -1,0 +1,37 @@
+.works {
+  height: 100vh;
+  // background-color: #383634;
+  padding: 80px 0 10px;
+  text-align: left;
+}
+
+.works-wrapper {
+  display: flex;
+  width: 860px;
+  margin: 60px auto 0;
+}
+
+.work-box {
+  background-color: rgba(100, 100, 100, 0.3);
+  border: 1px solid #333;
+}
+
+.work-image {
+  display: block;
+  width: 100%;
+}
+
+.work-description {
+  margin: 20px 0;
+}
+
+.work-description .button {
+  width: 60%;
+  margin-top: 20px;
+  padding: 3px;
+}
+
+.button-ghost {
+  border: 2px solid #fff;
+  background-color: rgba(255, 255, 255, 0.15);
+}
