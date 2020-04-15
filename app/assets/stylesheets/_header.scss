@@ -13,6 +13,10 @@
 .header{
   padding: 50px 30px 0px;
   // height: 100vh;
+  // &-top{
+  //   width: 80%;
+  //   margin: auto;
+  // }
   &-logo{
     text-align: left;
   }
@@ -38,7 +42,8 @@
 }
 
 .site-title {
-    margin: 50px;
+    // margin: 50px;
+    margin-top: 200px;
     font-size: 4.5rem;
 }
 
@@ -49,6 +54,12 @@
 
 
 // メニューバー装飾
+.toppage-footer-top__box{
+  float: left;
+}
+.header-menu{
+  float: right;
+}
 .header-menu-trigger,
 .header-menu-trigger span {
   display: inline-block;

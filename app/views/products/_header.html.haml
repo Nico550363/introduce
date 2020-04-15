@@ -1,23 +1,23 @@
-.header-logo
+.header-top
   =link_to root_path, class: "image" do
-    = image_tag "Nico's1.png", class: "toppage-footer-top__box", width: "20%", height: "20%"
-.header-menu
-  %a.header-menu-trigger{:href => "#"}
-    %span
-    %span
-    %span
--# .page-header
--#   %nav.nav-header
--#     %ul.ul-header
--#       %li.header-list
--#         =link_to products_skill_path, class: "header-list_small" do
--#           skill
--#       %li.header-list
--#         =link_to products_works_path, class: "header-list_small" do
--#           works
--#       %li.header-list
--#         =link_to products_about_path, class: "header-list_small" do
--#           about
--#       %li.header-list
--#         =link_to products_contact_path, class: "header-list_small" do
--#           contact
+    = image_tag "Nico's1.png", class: "toppage-footer-top__box", width: "150px", height: "150px"
+  .header-menu
+    %a.header-menu-trigger{:href => "#"}
+      %span
+      %span
+      %span
+  .page-header
+    %nav.nav-header
+      %ul.ul-header
+        %li.header-list
+          =link_to products_skill_path, class: "header-list_small" do
+            skill
+        %li.header-list
+          =link_to products_works_path, class: "header-list_small" do
+            works
+        %li.header-list
+          =link_to products_about_path, class: "header-list_small" do
+            about
+        %li.header-list
+          =link_to products_contact_path, class: "header-list_small" do
+            contact
