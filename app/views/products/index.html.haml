@@ -1,9 +1,17 @@
-%body
+.wrapper
   .header
     = render "products/header"
-    .site-title-first
+    .site-title-first.type
       %h4 Nico's portfolio
-      %p.site-title-sub
+      %p.site-title-sub.type
         新しいサービスを生み出すことで人と人とを繋ぐきっかけを作りたい
         %br/
         そのお手伝いをさせていただきます
+
+-# :javascript
+-#   $(function() {
+-#     // 一旦hide()で隠してフェードインさせる
+-#     // 1.5秒かけてゆっくりフェードインさせる
+-#     $('.type').hide().fadeIn('1500');
+-#   });
+  

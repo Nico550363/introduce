@@ -5,4 +5,5 @@ Rails.application.routes.draw do
   get "products/about" => "products#about"
   get "products/works" => "products#works"
   get "products/contact" => "products#contact"
+  get "products/test" => "products#test"
 end

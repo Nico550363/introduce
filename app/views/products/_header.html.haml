@@ -1,8 +1,9 @@
 .header-top
   =link_to root_path, class: "image" do
     = image_tag "Nico's1.png", class: "toppage-footer-top__box", width: "150px", height: "150px"
+.header-box
   .header-menu
-    %a.header-menu-trigger.active
+    %a.header-menu-trigger
       %span
       %span
       %span
@@ -23,13 +24,10 @@
             contact
 
 :javascript
-  $(document).ready(function() {
-  $(".header-menu-trigger").click(function () {
-    $(this).toggleClass("active");
-    $(this).next().toggleClass("onanimation");
-    $('ul li').hide();
-    $('ul li').each(function(i) {
-  $(this).delay(80 * i).fadeIn(500);
-    });
+  $(function(){
+      $(".header-menu-trigger").click(function(){
+        $(this).toggleClass("active");
+        $(".header-list").slideToggle("slow");
+      });
   });
-  });
+
