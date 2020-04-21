@@ -1,7 +1,7 @@
 .about {
   height: 100vh;
   // background-color: #ffffff;
-  padding: 80px 30px;
+  padding: 0px 30px;
   color: #333;  
   text-align: left;
   &-site{
@@ -15,7 +15,7 @@
 }
 .topics dl {
   padding: 15px 0;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid #000;
 }
 
 .topics dt {
@@ -25,7 +25,7 @@
 @media screen and (min-width: 768px) {
   .topics dt {
     clear: left;
-    float: left;
+    // float: left;
     width: 20%;
   }
   .topics dd {
